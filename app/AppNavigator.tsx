@@ -20,7 +20,7 @@ export const AppNavigator = () => (
         <Stack.Screen name="Home" options={{ title: "Inicio" }}>
           {(props) => (
             <SafeScreen>
-              <HomeScreen />
+              <HomeScreen {...props} />
             </SafeScreen>
           )}
         </Stack.Screen>
